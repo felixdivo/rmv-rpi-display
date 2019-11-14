@@ -5,6 +5,8 @@ This is a small piece of software allowing bus and tram departures for some stat
 It is specific for the RMV, the *Rhein-Main-Verkehrsverbund*, a regional Hessian public transport provider.
 It interfaces with their [open data portal](https://opendata.rmv.de/), but should work with most HAFAS APIs with only minor modifications.
 
+![](example.jpg)
+
 ## Hardware
 
 It uses an (overkill) Raspebrry Pi 3, as the case was already designed for that.
