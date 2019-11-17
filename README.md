@@ -9,7 +9,7 @@ It interfaces with their [open data portal](https://opendata.rmv.de/), but shoul
 
 ## Hardware
 
-It uses an (overkill) Raspebrry Pi 3, as the case was already designed for that.
+It uses an (overkill) Raspeberry Pi 3, as the case was already designed for that.
 The case can be 3D printed from the files given in `3d-print-template/`.
 The display we used was the *2.9inch E-Ink Module 296x128*/*2.9inch e-Paper Module* by *Waveshare*. Links to: [Amazon](https://www.amazon.de/gp/product/B071JFRV2S/), [Waveshare Wiki](https://www.waveshare.com/wiki/2.9inch_e-Paper_Module). The required "drivers" are in `epd2in9/`.
 
