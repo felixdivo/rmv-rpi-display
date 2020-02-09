@@ -46,7 +46,7 @@ sudo apt install git python3-pip python3-pil python3-spidev python3-rpi.gpio pyt
 
 7. Clone the git repo onto the Pi. This assumes that the code was cloned into `/home/pi`, making the entry point sit at `/home/pi/rmv-rpi-display/app.py`.
 ```bash
-git clone git@github.com:felixdivo/rmv-rpi-display.git
+git clone https://github.com/felixdivo/rmv-rpi-display.git
 ```
 
 8. Adjust `API_TOKEN`, `ORIGIN_ID` and `DESTINATION_ID` in [`rmv_api.py`](rmv_api.py). The IDs are taken from the first row ("HAFAS_ID") of the official list of stations found on the [RMV Open Data platform](https://opendata.rmv.de/site/files/rmv01/RMV_Haltestellen.zip). Test execute it with:
