@@ -42,7 +42,7 @@ sudo apt install git python3-pip python3-pil python3-spidev python3-rpi.gpio pyt
 
 5. [Enable SPI](https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md).
 
-6. Adjust the timezone to (for example) Germany/Berlin. This can be done from within `sudo raspi-config`. Restart after this just to be sure. ;)
+6. Adjust the timezone to (for example) Germany/Berlin. This can be done from within `sudo raspi-config` and checked with the `date` command. Restart after this just to be sure. ;)
 
 7. Clone the git repo onto the Pi. This assumes that the code was cloned into `/home/pi`, making the entry point sit at `/home/pi/rmv-rpi-display/app.py`.
 ```bash
