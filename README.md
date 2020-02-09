@@ -52,7 +52,7 @@ cd the/directory/where/you/placed/it/
 python3 app.py
 ```
 
-9. Make it start automatically. Add the following line on the line before the final `exit 0` of `/etc/rc.local`:
+9. Make it start automatically. Add the following line on the line before the final `exit 0` of `/etc/rc.local` (if you cloned it into `/home/pi/`):
 ```bash
 su pi -c "python3 /home/pi/rmv-rpi-display/app.py &"
 ```
