@@ -18,7 +18,7 @@ The display we used was the *2.9inch E-Ink Module 296x128*/*2.9inch e-Paper Modu
 
 This assumes that you have an API token obtained from [RMV Open Data](https://opendata.rmv.de/site/anmeldeseite.html).
 
-1. Download and install [*Raspbian Lite*](https://downloads.raspberrypi.org/raspbian_lite_latest). This was tested with version *Buster*, late 2019. Also configure it such that internet access is possible.
+1. Download and install [*Raspbian Lite*](https://downloads.raspberrypi.org/raspbian_lite_latest). This was tested with version *Buster*, late 2019. Also configure it such that internet access is possible. See [headless setup](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md).
 
 2. (Optional.) Update the system initially and reboot.
 ```bash
