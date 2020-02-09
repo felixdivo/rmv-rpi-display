@@ -37,7 +37,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 4. Install some dependencies
 ```bash
-sudo apt install python3-pip python3-pil python3-spidev python3-rpi.gpio python3-dateutil fonts-lato -y
+sudo apt install git python3-pip python3-pil python3-spidev python3-rpi.gpio python3-dateutil fonts-lato -y
 ```
 
 5. [Enable SPI](https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md).
@@ -45,6 +45,9 @@ sudo apt install python3-pip python3-pil python3-spidev python3-rpi.gpio python3
 6. Adjust the timezone to (for example) Germany/Berlin. This can be done from within `sudo raspi-config`. Restart after this just to be sure. ;)
 
 7. Clone the git repo onto the Pi. This assumes that the code was cloned into `/home/pi`, making the entry point sit at `/home/pi/rmv-rpi-display/app.py`.
+```bash
+git clone git@github.com:felixdivo/rmv-rpi-display.git
+```
 
 8. Adjust `API_TOKEN`, `ORIGIN_ID` and `DESTINATION_ID` in [`rmv_api.py`](rmv_api.py). The IDs are taken from the first row ("HAFAS_ID") of the official list of stations found on the [RMV Open Data platform](https://opendata.rmv.de/site/files/rmv01/RMV_Haltestellen.zip). Test execute it with:
 ```bash
@@ -52,7 +55,7 @@ cd the/directory/where/you/placed/it/
 python3 app.py
 ```
 
-9. Make it start automatically. Add the following line on the line before the final `exit 0` of `/etc/rc.local` (if you cloned it into `/home/pi/`):
+9. Make it start automatically. Add the following line on the line before the final `exit 0` of `/etc/rc.local` (if you cloned it into `/home/pi`):
 ```bash
 su pi -c "python3 /home/pi/rmv-rpi-display/app.py &"
 ```
